@@ -27,7 +27,8 @@ create table services
 	idservices serial not null
 		constraint services_pk
 			primary key,
-	description varchar not null
+	description varchar not null,
+    price INTEGER DEFAULT 0
 );
 
 alter table services owner to veto;
